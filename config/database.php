@@ -90,7 +90,7 @@ return [
             'charset' => 'utf8',
             'prefix' => '',
         ],
-        
+        /*
         'ss' => [
             'driver'   => 'oracle',
             'tns'      => env('DB_TNS', ''),
@@ -99,6 +99,16 @@ return [
             'database' => env('DB_DATABASE', 'tapapps'),                
             'username' => env('DB_USERNAME', 'sumbang_saran'),       
             'password' => env('DB_PASSWORD', 'sumbang_saran'),
+            'prefix'   => env('DB_PREFIX', ''),
+        ],*/
+        'ss' => [
+            'driver'   => 'pgsql',
+            'tns'      => env('DB_TNS', ''),
+            'host'     => env('DB_HOST', '10.20.1.111'),                         
+            'port'     => env('DB_PORT', '5432'),
+            'database' => env('DB_DATABASE', 'sumbang_saran'),                
+            'username' => env('DB_USERNAME', 'adm'),       
+            'password' => env('DB_PASSWORD', ''),
             'prefix'   => env('DB_PREFIX', ''),
         ],
         'tapdw' => [
